@@ -8,6 +8,7 @@ const Welcome = () => import('views/home/childComps/Welcome.vue')
 const Users = () => import('views/user/Users.vue')
 const Rights = () => import('views/rights/Rights.vue')
 const Roles = () => import('views/rights/Roles.vue')
+const GoodsCate = () => import('views/goods/GoodsCate.vue')
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,10 @@ const routes = [
       {
         path: '/roles',
         component: Roles
+      },
+      {
+        path: '/categories',
+        component: GoodsCate
       }
     ]
   }

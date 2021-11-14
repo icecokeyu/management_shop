@@ -62,7 +62,6 @@
           <!-- props 配置选项 -->
           <!-- @change当级联选择器选择变化时 -->
           <el-cascader 
-          expand-trigger="hover" 
           :options="parentCateList" 
           :props="cascaderProps" 
           v-model="cascaderKeys" 
@@ -158,8 +157,8 @@ export default {
       cascaderProps: {
         value: 'cat_id',
         label: 'cat_name',
-        children: 'children'
-        
+        children: 'children',
+        expandTrigger: 'hover'
       },
       cascaderKeys: [],
       // 添加分类名称对话框是否隐藏
